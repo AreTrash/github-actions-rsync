@@ -15,6 +15,7 @@ Rsync files from a GitHub repo to a destination server over SSH
 | Argument           | Description                                                                                                                                          |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `RSYNC_OPTIONS`    | Rsync-specific options when running the command. Exclusions, deletions, etc                                                                          |
+| `SSH_OPTIONS`     |                                                                                                                                                        |
 | `RSYNC_TARGET`     | Where to deploy the files on the server                                                                                                              |
 | `RSYNC_SOURCE`     | What files to deploy from the repo (starts at root) **NOTE**: a trailing `/` deploys the _contents_ of the directory instead of the entire directory |
 
