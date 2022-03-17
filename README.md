@@ -35,9 +35,10 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Deploy to sandbox via rsync
-        uses: trendyminds/github-actions-rsync@master
+        uses: AreTrash/github-actions-rsync@master
         with:
           RSYNC_OPTIONS: -avzr --delete --exclude node_modules --exclude '.git*'
+          SSH_OPTIONS: -p 2222
           RSYNC_TARGET: /path/to/target/folder/on/server
           RSYNC_SOURCE: /src/public/
         env:
